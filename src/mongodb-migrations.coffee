@@ -15,7 +15,7 @@ class Migrator
     .then (db) =>
       @_db = db
 
-    @_collName = dbCconfig.collection
+    @_collName = dbConfig.collection
 
     if logFn or logFn == null
       @log = logFn
