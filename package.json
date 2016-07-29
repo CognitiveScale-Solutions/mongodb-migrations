@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:daldridge-cs/mongodb-migrations.git"
+    "url": "git@github.com:CognitiveScale-Solutions/mongodb-migrations.git"
   },
   "keywords": [
     "mongodb",
@@ -29,9 +29,9 @@
   "author": "Eugene Mirotin <emirotin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/daldridge-cs/mongodb-migrations/issues"
+    "url": "https://github.com/CognitiveScale-Solutions/mongodb-migrations/issues"
   },
-  "homepage": "https://github.com/daldridge-cs/mongodb-migrations",
+  "homepage": "https://github.com/CognitiveScale-Solutions/mongodb-migrations",
   "dependencies": {
     "bluebird": "^3.4.1",
     "lodash": "^4.13.0",
