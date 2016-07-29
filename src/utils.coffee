@@ -1,4 +1,4 @@
 MongoClient = require('mongodb').MongoClient
 
-exports.connect = (url, options, cb) ->
-  MongoClient.connect url, options, cb
+exports.connect = (config, cb) ->
+  MongoClient.connect config.url, config.options, cb

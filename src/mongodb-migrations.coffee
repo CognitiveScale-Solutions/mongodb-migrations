@@ -11,7 +11,7 @@ class Migrator
     @_m = []
     @_result = {}
     @_dbReady = new Promise.fromCallback (cb) ->
-      mongoConnect dbCconfig.url, dbCconfig.options, cb
+      mongoConnect dbCconfig, cb
     .then (db) =>
       @_db = db
 
