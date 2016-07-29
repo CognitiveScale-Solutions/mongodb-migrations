@@ -6,16 +6,16 @@ mkdirp = require 'mkdirp'
 mongoConnect = require('./utils').connect
 
 class Migrator
-  constructor: (dbConfig, logFn) ->
+  constructor: (dbCconfig, logFn) ->
     @_isDisposed = false
     @_m = []
     @_result = {}
     @_dbReady = new Promise.fromCallback (cb) ->
-      mongoConnect dbConfig, cb
+      mongoConnect dbCconfig.url, dbCconfig.options, cb
     .then (db) =>
       @_db = db
 
-    @_collName = dbConfig.collection
+    @_collName = dbCconfig.collection
 
     if logFn or logFn == null
       @log = logFn

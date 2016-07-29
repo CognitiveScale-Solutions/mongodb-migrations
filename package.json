@@ -1,5 +1,5 @@
 {
-  "name": "mongodb-migrations",
+  "name": "c12e-mongodb-migrations",
   "version": "0.6.1",
   "description": "A migration framework for MongoDB",
   "main": "lib/mongodb-migrations.js",
@@ -12,9 +12,12 @@
   "bin": {
     "mm": "./bin/mm"
   },
+  "publishConfig": {
+    "registry": "https://cognitivescale.artifactoryonline.com/cognitivescale/api/npm/npm-local"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/emirotin/mongodb-migrations.git"
+    "url": "git@github.com:daldridge-cs/mongodb-migrations.git"
   },
   "keywords": [
     "mongodb",
@@ -26,9 +29,9 @@
   "author": "Eugene Mirotin <emirotin@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/emirotin/mongodb-migrations/issues"
+    "url": "https://github.com/daldridge-cs/mongodb-migrations/issues"
   },
-  "homepage": "https://github.com/emirotin/mongodb-migrations",
+  "homepage": "https://github.com/daldridge-cs/mongodb-migrations",
   "dependencies": {
     "bluebird": "^3.4.1",
     "lodash": "^4.13.0",
